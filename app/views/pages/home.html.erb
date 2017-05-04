@@ -2,11 +2,11 @@
 <p>Please enjoy yourself!</p>
 
 <%= form_tag("/sms/send", method: "post") do %>
-  <%= label_tag(:q, "Send to") %>
-  <%= text_field_tag(:q) %>
+  <%= label_tag(:num, "Send to") %>
+  <%= text_field_tag(:num) %>
   <br/>
-  <%= label_tag(:q, "Text body") %>
-  <%= text_field_tag(:q) %>
+  <%= label_tag(:text, "Text body") %>
+  <%= text_field_tag(:text) %>
   <br/>
   <%= submit_tag "Send" %>
 <% end %>
