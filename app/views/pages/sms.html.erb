@@ -3,4 +3,11 @@
 <br/><br/>
 We have received your sms parameters <br/>
 and are preparing to send your text message!<br/><br/>
-Stay tuned!</p>
+Stay tuned for your impending text!</p>
+
+<body>
+    <%= yield %>
+    <p1><%= "Recipient: " + params[:num]%></p1>
+    <p1><br/></p1>
+    <p1><%= "Body: " + '"""' + params[:text] + '"""'%></p1>
+</body>
